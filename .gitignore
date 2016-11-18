@@ -1,0 +1,11 @@
+# don't want to track anything in private since this is stuff I don't want to share.
+data/private/*
+docs/private/*
+# .Rmd file wanted public but not compiled docs
+docs/*.pdf
+
+.Rhistory
+.directory
+
+*~
+*.md

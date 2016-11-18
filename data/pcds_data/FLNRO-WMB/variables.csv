@@ -1,0 +1,7 @@
+variables
+variable, standard_name, cell_method, unit
+temperature, air_temperature, time: point, celsius
+precipitation, lwe_thickness_of_precipitation_amount, time: sum, mm
+wind_speed, wind_speed, time: mean, m s-1
+wind_direction, wind_from_direction, time: mean, degree
+relative_humidity, relative_humidity, time: mean, %

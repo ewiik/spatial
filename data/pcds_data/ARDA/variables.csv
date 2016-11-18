@@ -1,0 +1,14 @@
+variables
+variable, standard_name, cell_method, unit
+MINTMP, air_temperature, time: minimum, celsius
+PPT, lwe_thickness_of_precipitation_amount, time: sum, mm
+MAXTMP, air_temperature, time: maximum, celsius
+ACCPPT1, lwe_thickness_of_precipitation, time: sum, mm
+ACCPPT2, lwe_thickness_of_precipitation, time: sum, mm
+SNOWDEPTH, surface_snow_thickness, time: point, cm
+HUM2, relative_humidity, time: mean, %
+HUM3, relative_humidity, time: mean, %
+HUM4, relative_humidity, time: mean, %
+HUM1300, relative_humidity, time: mean, None
+SHOURS, duration_of_sunshine, time: sum, s
+HUM1, relative_humidity, time: mean, %

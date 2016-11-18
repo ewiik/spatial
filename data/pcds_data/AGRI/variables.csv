@@ -1,0 +1,5 @@
+variables
+variable, standard_name, cell_method, unit
+Prec, lwe_thickness_of_precipitation_amount, time: sum, mm
+TMin, air_temperature, time: minimum, celsius
+TMax, air_temperature, time: maximum, celsius
