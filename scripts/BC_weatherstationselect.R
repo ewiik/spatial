@@ -2,24 +2,24 @@
 ## the weather station data have all been sourced from 
 ##    http://tools.pacificclimate.org/dataportal/pcds/map/
 ##    https://www.pacificclimate.org/data/bc-station-data-disclaimer
+## FIXME: worth just using same package as Heather and copy pasting the code from SK?
 
 ## load necessary packages
 library("sp")
 
 ## get necessary data sets
-statmeta <- read.csv("data/pcds_data/crmp_network_geoserver.csv")
+statmeta <- read.csv("../data/pcds_data/crmp_network_geoserver.csv")
 statsub <- subset(statmeta, select = c(network_name, native_id, station_name, lon, lat, elev))
 
-if (!file.exists("data/piscesallorgh.csv")) {
+if (!file.exists("../data/private/piscesallorgh.csv")) {
   stop("Get piscesallorgh.csv from emma")
 }
-pisces <- read.csv("data/piscesallorgh.csv") 
+pisces <- read.csv("../data/private/piscesallorgh.csv") 
 
-read.csv(googlecoords, )
-if (!file.exists("data/googlecoords.csv")) {
-  source("scripts/co2flux_spatial.R")
+if (!file.exists("../data/googlecoords.csv")) {
+  source("../scripts/co2flux_spatial.R")
 }
-googlecoords <- read.csv("data/googlecoords.csv") 
+googlecoords <- read.csv("../data/googlecoords.csv") 
 ## FIXME: these lat longs still not plotting in the exact location of the lake but close 
 ##    enough for now in terms of checking how to match the right station
 
